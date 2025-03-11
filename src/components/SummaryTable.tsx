@@ -1,4 +1,4 @@
-import React from "react";
+
 
 interface SummaryTableProps {
   kmlData: Document | null;
@@ -9,7 +9,7 @@ function SummaryTable({ kmlData }: SummaryTableProps) {
     return null;
   }
 
-  const counts = {
+  const counts: { [key: string]: number } = {
     Placemarks: kmlData.getElementsByTagName("Placemark").length,
     LineStrings: kmlData.getElementsByTagName("LineString").length,
   };

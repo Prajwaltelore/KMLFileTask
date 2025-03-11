@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
 import KMLUploader from "./components/KMLUploader";
 import SummaryTable from "./components/SummaryTable";
